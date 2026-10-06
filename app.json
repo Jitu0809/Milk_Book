@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "MilkBookApp",
+    "name": "Milk Book",
     "slug": "MilkBookApp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,15 +10,23 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.milkbook.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#2a6549",
+        "foregroundImage": "./assets/adaptive-icon.png"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      "expo-sharing"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b8877325-ea9a-4b4f-92bf-d7b5fd416256"
+      }
     }
   }
 }
